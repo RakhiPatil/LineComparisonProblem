@@ -11,6 +11,14 @@ public class LineComparisonProblem {
         }
     }
 
+    public static String compareTo(double length,double length2){
+        if(length > length2){
+            return "First Line is Greater than Second Line";
+        }else{
+            return "Second Line is Greater the First Line";
+        }
+    }
+
     public static void main(String[] args) {
         //UC-1
         System.out.println("Welcome to line Comparison problem");
@@ -37,6 +45,7 @@ public class LineComparisonProblem {
         System.out.println("Length of The Second Line : "+length2);
 
         System.out.println(equals(length,length2));
+        System.out.println(compareTo(length,length2));
 
     }
 }
